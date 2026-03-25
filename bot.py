@@ -3,7 +3,8 @@ import uuid
 from telegram import Update, InlineQueryResultArticle, InputTextMessageContent, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import ApplicationBuilder, InlineQueryHandler, CommandHandler, ContextTypes
 
-TOKEN = "8224666230:AAEH-vKIvdvcWOT2oBx4RR0lFkHBggu4RnI"  # your token
+import os
+TOKEN = os.getenv("8224666230:AAEH-vKIvdvcWOT2oBx4RR0lFkHBggu4RnI")
 
 def generate_femboy():
     percent = random.randint(1, 100)
